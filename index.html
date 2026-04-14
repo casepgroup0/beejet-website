@@ -16,7 +16,7 @@
   <header class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#home" class="nav-logo">
-        <img src="assets/images/logo.png" alt="Beejet Souvenirs & Printing Logo" />
+        <img src="assets/images/logo.jpg" alt="Beejet Souvenirs & Printing Logo" />
       </a>
       <nav class="nav-links" id="navLinks">
         <a href="#home" class="nav-link active">Home</a>
@@ -43,12 +43,13 @@
       <div class="hero-dots"></div>
     </div>
     <div class="hero-content">
-      <span class="hero-badge">🇬🇭 Based in Accra, Ghana</span>
-      <h1 class="hero-title">
-        Precision Printing &<br />
-        <span class="hero-highlight">Premium Souvenirs</span><br />
-        That Elevate Your Brand
-      </h1>
+      <h1 class="hero-brand-name">BeeJet</h1>
+      <a href="https://maps.google.com/?q=13+Mensah+Street+Accra+New+Town+Ghana" target="_blank" class="hero-badge hero-badge--link">
+        <i class="fas fa-map-marker-alt"></i> Based in Accra, Ghana
+      </a>
+      <h2 class="hero-title">
+        Precision Printing & Premium Souvenirs That Elevate Your Brand
+      </h2>
       <p class="hero-sub">
         We print identity with precision — from custom souvenirs and branded merchandise
         to large format printing and corporate branding solutions.
@@ -137,45 +138,75 @@
       </div>
       <div class="services-grid">
 
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-gift"></i></div>
+        <div class="service-card" onclick="openModal('souvenirs')">
+          <div class="service-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/3082/3082044.png" alt="Custom Souvenirs" />
+          </div>
           <h3>Custom Souvenirs</h3>
           <p>Mugs, T-shirts, pens, keychains, gift items and more — all branded to perfection for any occasion.</p>
+          <span class="service-learn">Learn More <i class="fas fa-arrow-right"></i></span>
         </div>
 
-        <div class="service-card service-card--pink">
-          <div class="service-icon"><i class="fas fa-building"></i></div>
+        <div class="service-card service-card--pink" onclick="openModal('corporate')">
+          <div class="service-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/3774/3774278.png" alt="Corporate Branding" />
+          </div>
           <h3>Corporate Branding</h3>
           <p>Complete branding solutions for businesses — from branded stationery to full corporate merchandise packages.</p>
+          <span class="service-learn">Learn More <i class="fas fa-arrow-right"></i></span>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-print"></i></div>
+        <div class="service-card" onclick="openModal('uv')">
+          <div class="service-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/2991/2991100.png" alt="UV Printing" />
+          </div>
           <h3>UV Direct Printing</h3>
           <p>High-resolution UV & UV-DTF printing on bottles, phone cases, diaries, pens and virtually any surface.</p>
+          <span class="service-learn">Learn More <i class="fas fa-arrow-right"></i></span>
         </div>
 
-        <div class="service-card service-card--pink">
-          <div class="service-icon"><i class="fas fa-image"></i></div>
+        <div class="service-card service-card--pink" onclick="openModal('largeformat')">
+          <div class="service-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Large Format Printing" />
+          </div>
           <h3>Large Format Printing</h3>
           <p>Eye-catching banners, roll-ups, signage and backdrops that make your event or space impossible to ignore.</p>
+          <span class="service-learn">Learn More <i class="fas fa-arrow-right"></i></span>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-calendar-star"></i></div>
+        <div class="service-card" onclick="openModal('events')">
+          <div class="service-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/2838/2838779.png" alt="Event Branding" />
+          </div>
           <h3>Event Branding & Merchandise</h3>
           <p>Custom event merchandise, branded giveaways, and full event identity packages for weddings, corporate events and more.</p>
+          <span class="service-learn">Learn More <i class="fas fa-arrow-right"></i></span>
         </div>
 
-        <div class="service-card service-card--pink">
-          <div class="service-icon"><i class="fas fa-box-open"></i></div>
+        <div class="service-card service-card--pink" onclick="openModal('packaging')">
+          <div class="service-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="Packaging" />
+          </div>
           <h3>Packaging & Promotional</h3>
           <p>Custom packaging, branded bags, and promotional products that leave lasting impressions on your customers.</p>
+          <span class="service-learn">Learn More <i class="fas fa-arrow-right"></i></span>
         </div>
 
       </div>
     </div>
   </section>
+
+  <!-- ========== SERVICE MODALS ========== -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+      <div class="modal-icon" id="modalIcon"></div>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-desc" id="modalDesc"></p>
+      <ul class="modal-list" id="modalList"></ul>
+      <a href="#contact" class="btn-primary modal-cta" onclick="closeModal()">Get a Quote <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
 
   <!-- ========== GALLERY SECTION ========== -->
   <section class="gallery" id="gallery">
@@ -307,9 +338,9 @@
           </div>
           <p class="testimonial-text">"Beejet delivered our corporate branded items on time and the quality was exceptional. The team was professional throughout. Highly recommend!"</p>
           <div class="testimonial-author">
-            <div class="author-avatar">AK</div>
+            <div class="author-avatar">CO</div>
             <div>
-              <strong>Ama Korkor</strong>
+              <strong>Cynthia Ofori-Dwumfuo</strong>
               <span>Marketing Manager, GCB Bank</span>
             </div>
           </div>
@@ -374,13 +405,13 @@
         <!-- Contact Info -->
         <div class="contact-info">
 
-          <div class="contact-card">
+          <a href="https://maps.google.com/?q=13+Mensah+Street+Accra+New+Town+Ghana" target="_blank" class="contact-card contact-card--link">
             <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
             <div>
               <h4>Our Location</h4>
-              <p>13 Mensah Street, Accra New Town, Accra, Ghana</p>
+              <p>13 Mensah Street, Accra New Town, Accra, Ghana <i class="fas fa-external-link-alt" style="font-size:0.7rem; margin-left:4px;"></i></p>
             </div>
-          </div>
+          </a>
 
           <div class="contact-card">
             <div class="contact-icon"><i class="fas fa-phone"></i></div>
@@ -468,7 +499,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="assets/images/logo.png" alt="Beejet Logo" class="footer-logo" />
+          <img src="assets/images/logo.jpg" alt="Beejet Logo" class="footer-logo" />
           <p>Precision Printing & Premium Souvenirs That Elevate Your Brand.</p>
           <div class="social-links mt-1">
             <a href="https://www.instagram.com/beejet_events" target="_blank" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
@@ -500,7 +531,7 @@
         </div>
         <div class="footer-contact">
           <h4>Contact</h4>
-          <p><i class="fas fa-map-marker-alt"></i> 13 Mensah Street, Accra New Town</p>
+          <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q=13+Mensah+Street+Accra+New+Town+Ghana" target="_blank">13 Mensah Street, Accra New Town</a></p>
           <p><i class="fas fa-phone"></i> <a href="tel:+233557079120">0557 079 120</a></p>
           <p><i class="fas fa-phone"></i> <a href="tel:+233244864905">0244 864 905</a></p>
           <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/233557079120" target="_blank">WhatsApp Us</a></p>
@@ -509,6 +540,9 @@
       <div class="footer-bottom">
         <p>&copy; 2025 Beejet Souvenirs & Printing. All rights reserved.</p>
         <p>We print identity with precision.</p>
+      </div>
+      <div class="footer-credit">
+        Built by <a href="https://portfoliocasep.vercel.app/" target="_blank" rel="noopener noreferrer">CASEP GROUP</a>
       </div>
     </div>
   </footer>
