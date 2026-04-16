@@ -6,30 +6,30 @@
   <title>Beejet Souvenirs & Printing | Accra, Ghana</title>
   <meta name="description" content="Premium printing & souvenirs in Accra. Custom mugs, T-shirts, branded pens, banners, event merchandise and more. We print identity with precision." />
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
-  <link rel="apple-touch-icon" href="assets/images/favicon.ico" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
   <!-- ========== NAVBAR ========== -->
   <header class="navbar" id="navbar">
-    <div class="nav-container">
+    <div class="nav-wrap">
       <a href="#home" class="nav-logo">
-        <img src="assets/images/logo.jpg" alt="Beejet Logo" />
+        <img src="assets/images/logo.jpg" alt="Beejet" />
+        <span>Beejet</span>
       </a>
       <nav class="nav-links" id="navLinks">
-        <a href="#home"         class="nav-link active">Home</a>
-        <a href="#services"     class="nav-link">Services</a>
-        <a href="#about"        class="nav-link">About</a>
-        <a href="#gallery"      class="nav-link">Portfolio</a>
-        <a href="#contact"      class="nav-link">Contact</a>
+        <a href="#home"        class="nav-link active">Home</a>
+        <a href="#services"    class="nav-link">Services</a>
+        <a href="#about"       class="nav-link">About</a>
+        <a href="#gallery"     class="nav-link">Portfolio</a>
+        <a href="#contact"     class="nav-link">Contact</a>
       </nav>
-      <a href="https://wa.me/233557079120" target="_blank" class="btn-nav-cta">
+      <a href="https://wa.me/233557079120" target="_blank" class="btn-cta">
         Get Started <i class="fas fa-arrow-right"></i>
       </a>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <button class="hamburger" id="hamburger">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -37,177 +37,194 @@
 
   <!-- ========== HERO ========== -->
   <section class="hero" id="home">
-    <div class="hero-bg">
-      <div class="hero-glow hero-glow-1"></div>
-      <div class="hero-glow hero-glow-2"></div>
-      <div class="hero-grid-lines"></div>
+
+    <!-- Background layers -->
+    <div class="hero-bg-layers">
+      <div class="bg-glow bg-glow-center"></div>
+      <div class="bg-glow bg-glow-left"></div>
+      <div class="bg-glow bg-glow-right"></div>
+      <div class="bg-grid"></div>
+      <div class="bg-particles" id="particles"></div>
     </div>
 
-    <div class="hero-inner">
-      <div class="hero-text">
-        <p class="hero-eyebrow"><span class="eyebrow-line"></span> Premium Quality Printing</p>
-        <h1 class="hero-heading">
-          Beejet Souvenirs<br />
-          &amp; <span class="hero-pink">Printing</span>
-        </h1>
-        <p class="hero-sub">Precision Printing &amp; Premium Souvenirs That Elevate Your Brand</p>
+    <!-- Hero text block — centered at top -->
+    <div class="hero-top">
+      <p class="hero-eyebrow">
+        <span class="ey-line"></span>
+        Premium Souvenirs &amp; Printing
+        <span class="ey-line"></span>
+      </p>
+      <h1 class="hero-h1">
+        Beejet Souvenirs<br />
+        &amp; <span class="pink-word">Printing</span>
+      </h1>
+      <p class="hero-tagline">Precision Printing &amp; Premium Souvenirs That Elevate Your Brand</p>
+    </div>
 
-        <div class="hero-actions">
-          <a href="#gallery" class="btn-primary">View Our Work <i class="fas fa-arrow-right"></i></a>
-          <a href="https://wa.me/233557079120" target="_blank" class="btn-ghost">
-            <i class="fab fa-whatsapp"></i> WhatsApp Us
-          </a>
+    <!-- Hero device mockup — full width below text -->
+    <div class="hero-device-wrap">
+      <div class="device-frame">
+        <div class="device-notch-bar">
+          <div class="device-btn-row"><span></span><span></span><span></span></div>
+          <div class="device-url-bar"><i class="fas fa-lock"></i> beejet-souvenirs.com</div>
+          <div class="device-actions"><i class="fas fa-ellipsis-h"></i></div>
         </div>
-
-        <div class="hero-trust">
-          <span class="trust-label">Trusted by 200+ clients</span>
-          <div class="trust-avatars">
-            <div class="ta">G</div>
-            <div class="ta">K</div>
-            <div class="ta">S</div>
-            <div class="ta">E</div>
+        <div class="device-screen">
+          <!-- Mini navbar inside -->
+          <div class="screen-nav">
+            <img src="assets/images/logo.jpg" alt="Beejet" class="screen-logo" />
+            <div class="screen-nav-links">
+              <span>Home</span><span>Services</span><span>Gallery</span><span>Contact</span>
+            </div>
+            <div class="screen-nav-btn">Get a Quote</div>
           </div>
-          <div class="trust-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-        </div>
-      </div>
-
-      <!-- Hero visual: mock product showcase -->
-      <div class="hero-visual">
-        <div class="hero-card-wrap">
-          <div class="hero-mockup">
-            <div class="mockup-screen">
-              <div class="mockup-top-bar">
-                <span></span><span></span><span></span>
+          <!-- Screen hero content -->
+          <div class="screen-hero">
+            <div class="screen-hero-text">
+              <h2>Elevate Your<br /><span>Brand Today</span></h2>
+              <p>We deliver premium printing &amp; branding solutions</p>
+              <div class="screen-btns">
+                <button class="screen-btn-pink">Get Started</button>
+                <button class="screen-btn-ghost"><i class="fas fa-play"></i> View Work</button>
               </div>
-              <div class="mockup-content">
-                <div class="mockup-logo-row">
-                  <img src="assets/images/logo.jpg" alt="Beejet" class="mockup-logo" />
-                  <span class="mockup-tagline">Souvenirs &amp; Printing Experts!</span>
-                </div>
-                <div class="mockup-img-row">
-                  <img src="assets/images/gallery-5.jpg" alt="Products" class="mockup-prod mockup-prod-1" />
-                  <div class="mockup-stat-box">
-                    <span class="mstat-num">500+</span>
-                    <span class="mstat-label">Projects</span>
-                    <div class="mstat-bar"><div class="mstat-fill"></div></div>
-                  </div>
-                </div>
-                <div class="mockup-badge-row">
-                  <span class="mbadge"><i class="fas fa-print"></i> UV Printing</span>
-                  <span class="mbadge mbadge--pink"><i class="fas fa-gift"></i> Souvenirs</span>
-                  <span class="mbadge"><i class="fas fa-image"></i> Banners</span>
+              <div class="screen-trusted">
+                <span>Trusted by 200+ clients</span>
+                <div class="screen-logos">
+                  <span>GCB</span>
+                  <span>Energy Commission</span>
+                  <span>SARIS</span>
                 </div>
               </div>
             </div>
-          </div>
-
-          <!-- Floating cards -->
-          <div class="float-card float-card-1">
-            <i class="fas fa-check-circle"></i>
-            <div>
-              <strong>Order Delivered!</strong>
-              <span>Corporate gift sets · GCB Bank</span>
+            <div class="screen-hero-visual">
+              <img src="assets/images/gallery-11.jpg" alt="Products" class="screen-prod-img" />
+              <div class="screen-stat-badge">
+                <span class="ssb-num">+500</span>
+                <span class="ssb-label">Projects Done</span>
+                <div class="ssb-chart">
+                  <div class="ssb-bar" style="height:40%"></div>
+                  <div class="ssb-bar" style="height:65%"></div>
+                  <div class="ssb-bar" style="height:50%"></div>
+                  <div class="ssb-bar" style="height:80%"></div>
+                  <div class="ssb-bar ssb-bar--pink" style="height:100%"></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="float-card float-card-2">
-            <div class="float-stat">
-              <span class="fs-num">98%</span>
-              <span class="fs-label">Client Satisfaction</span>
-            </div>
-            <div class="float-bar-wrap">
-              <div class="float-bar"><div class="float-bar-fill"></div></div>
-            </div>
+          <!-- Screen bottom icons row -->
+          <div class="screen-icon-row">
+            <div class="screen-icon-item"><i class="fas fa-print"></i></div>
+            <div class="screen-icon-item"><i class="fas fa-gift"></i></div>
+            <div class="screen-icon-item"><i class="fas fa-image"></i></div>
+            <div class="screen-icon-item"><i class="fas fa-box-open"></i></div>
           </div>
         </div>
       </div>
+
+      <!-- Ambient glow under device -->
+      <div class="device-glow"></div>
+
+      <!-- Floating stat cards around device -->
+      <div class="float-card float-left">
+        <div class="fc-icon"><i class="fas fa-check-circle"></i></div>
+        <div class="fc-text">
+          <strong>Order Delivered!</strong>
+          <span>Corporate gift sets · GCB Bank</span>
+        </div>
+      </div>
+      <div class="float-card float-right">
+        <div class="fc-stat">
+          <span class="fcs-num">98%</span>
+          <span class="fcs-label">Client Satisfaction</span>
+        </div>
+        <div class="fc-bar"><div class="fc-bar-fill"></div></div>
+      </div>
     </div>
 
-    <!-- Service mini cards row -->
-    <div class="hero-service-row">
-      <div class="hero-svc-card" onclick="openModal('souvenirs')">
-        <img src="https://cdn-icons-png.flaticon.com/512/3082/3082044.png" alt="Souvenirs" />
+    <!-- Service cards row -->
+    <div class="hero-svc-row">
+      <div class="hsvc" onclick="openModal('souvenirs')">
+        <div class="hsvc-icon"><img src="https://cdn-icons-png.flaticon.com/512/3082/3082044.png" alt="Souvenirs"/></div>
         <span>Custom Souvenirs</span>
-        <div class="svc-dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
+        <div class="hsvc-dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
       </div>
-      <div class="hero-svc-card hero-svc-card--active" onclick="openModal('uv')">
-        <img src="https://cdn-icons-png.flaticon.com/512/2991/2991100.png" alt="UV Print" />
+      <div class="hsvc hsvc--active" onclick="openModal('uv')">
+        <div class="hsvc-icon"><img src="https://cdn-icons-png.flaticon.com/512/2991/2991100.png" alt="UV Print"/></div>
         <span>UV/DTF Printing</span>
-        <div class="svc-dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
+        <div class="hsvc-dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
       </div>
-      <div class="hero-svc-card" onclick="openModal('largeformat')">
-        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Large Format" />
+      <div class="hsvc" onclick="openModal('largeformat')">
+        <div class="hsvc-icon"><img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Large Format"/></div>
         <span>Large Format</span>
-        <div class="svc-dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
+        <div class="hsvc-dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
       </div>
-      <div class="hero-svc-card" onclick="openModal('events')">
-        <img src="https://cdn-icons-png.flaticon.com/512/2838/2838779.png" alt="Events" />
+      <div class="hsvc" onclick="openModal('events')">
+        <div class="hsvc-icon"><img src="https://cdn-icons-png.flaticon.com/512/2838/2838779.png" alt="Events"/></div>
         <span>Event Branding</span>
-        <div class="svc-dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
+        <div class="hsvc-dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
       </div>
     </div>
 
     <!-- Stats bar -->
     <div class="hero-stats-bar">
-      <div class="hsb-item">
-        <span class="hsb-num" data-target="500">0</span><span class="hsb-plus">+</span>
+      <div class="hsb-stat">
+        <span class="hsb-num" data-target="500">0</span><span class="hsb-suf">+</span>
         <span class="hsb-label">Projects Done</span>
       </div>
       <div class="hsb-divider"></div>
-      <div class="hsb-item">
-        <span class="hsb-num" data-target="98">0</span><span class="hsb-plus">%</span>
+      <div class="hsb-stat">
+        <span class="hsb-num" data-target="98">0</span><span class="hsb-suf">%</span>
         <span class="hsb-label">Client Satisfaction</span>
       </div>
       <div class="hsb-divider"></div>
-      <div class="hsb-item">
-        <span class="hsb-num" data-target="200">0</span><span class="hsb-plus">+</span>
+      <div class="hsb-stat">
+        <span class="hsb-num" data-target="200">0</span><span class="hsb-suf">+</span>
         <span class="hsb-label">Happy Clients</span>
       </div>
       <div class="hsb-divider"></div>
-      <a href="https://wa.me/233557079120" target="_blank" class="btn-primary hsb-cta">
+      <a href="https://wa.me/233557079120" target="_blank" class="btn-cta hsb-cta">
         Get Free Quote <i class="fas fa-arrow-right"></i>
       </a>
     </div>
 
-    <p class="hero-tagline-strip">
-      <span>Premium Quality</span> · <span>Fast Turnaround</span> · <span>Expert Craftsmanship</span> · <span>Accra, Ghana</span>
-    </p>
+    <!-- Strip -->
+    <div class="hero-strip">
+      <span>Premium Quality</span>
+      <i class="fas fa-circle dot-sep"></i>
+      <span>Fast Turnaround</span>
+      <i class="fas fa-circle dot-sep"></i>
+      <span>Expert Craftsmanship</span>
+      <i class="fas fa-circle dot-sep"></i>
+      <span>Accra, Ghana</span>
+    </div>
+
   </section>
 
   <!-- ========== ABOUT ========== -->
   <section class="about" id="about">
     <div class="container">
       <div class="about-grid">
-        <div class="about-images">
-          <div class="about-img-main">
+        <div class="about-imgs">
+          <div class="aimg-main">
             <img src="assets/images/gallery-11.jpg" alt="UV/DTF Print Services" />
-            <div class="about-img-badge">
-              <i class="fas fa-award"></i>
-              <span>Premium Quality</span>
-            </div>
+            <div class="aimg-badge"><i class="fas fa-award"></i> Premium Quality</div>
           </div>
-          <div class="about-img-accent">
-            <img src="assets/images/gallery-12.jpg" alt="Corporate Gift Sets" />
+          <div class="aimg-accent">
+            <img src="assets/images/gallery-12.jpg" alt="Gift Sets" />
           </div>
         </div>
-        <div class="about-text">
-          <p class="section-eyebrow"><span class="eyebrow-line"></span> Who We Are</p>
-          <h2 class="section-heading">Delivering Quality, Creativity &amp; Excellence</h2>
-          <p class="about-desc">
-            <strong>Beejet Souvenirs &amp; Printing</strong> is Accra's trusted partner for all things branding and print.
-            From custom souvenirs that tell your story to large-format banners that command attention,
-            we bring your vision to life with precision and passion.
-          </p>
-          <p class="about-desc">
-            Whether you're a corporate organisation, an event planner, or an individual with a special occasion,
-            we have the technology, expertise and creativity to make your brand unforgettable.
-          </p>
-          <ul class="about-checklist">
+        <div class="about-body">
+          <p class="sec-eyebrow"><span class="ey-line-short"></span> Who We Are</p>
+          <h2 class="sec-h2">Delivering Quality, Creativity &amp; Excellence</h2>
+          <p class="about-p"><strong>Beejet Souvenirs &amp; Printing</strong> is Accra's trusted partner for all things branding and print. From custom souvenirs that tell your story to large-format banners that command attention, we bring your vision to life with precision and passion.</p>
+          <p class="about-p">Whether you're a corporate organisation, an event planner, or an individual with a special occasion, we have the technology, expertise and creativity to make your brand unforgettable.</p>
+          <ul class="about-list">
             <li><i class="fas fa-check"></i> UV Direct &amp; UV-DTF Printing Technology</li>
             <li><i class="fas fa-check"></i> Large Format Banners &amp; Signage</li>
             <li><i class="fas fa-check"></i> Custom Corporate Branding Packages</li>
             <li><i class="fas fa-check"></i> Fast Turnaround &amp; Reliable Delivery</li>
           </ul>
-          <a href="#contact" class="btn-primary">Work With Us <i class="fas fa-arrow-right"></i></a>
+          <a href="#contact" class="btn-cta">Work With Us <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -216,99 +233,92 @@
   <!-- ========== SERVICES ========== -->
   <section class="services" id="services">
     <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow"><span class="eyebrow-line"></span> What We Offer</p>
-        <h2 class="section-heading">Our Core Services</h2>
-        <p class="section-sub">Everything your brand needs — designed, printed and delivered with excellence.</p>
+      <div class="sec-header">
+        <p class="sec-eyebrow center"><span class="ey-line-short"></span> What We Offer</p>
+        <h2 class="sec-h2 center">Our Core Services</h2>
+        <p class="sec-sub">Everything your brand needs — designed, printed and delivered with excellence.</p>
       </div>
-      <div class="services-grid">
-
+      <div class="svc-grid">
         <div class="svc-card" onclick="openModal('souvenirs')">
-          <div class="svc-icon"><img src="https://cdn-icons-png.flaticon.com/512/3082/3082044.png" alt="Souvenirs" /></div>
+          <div class="svc-icon"><img src="https://cdn-icons-png.flaticon.com/512/3082/3082044.png" alt="Souvenirs"/></div>
           <h3>Custom Souvenirs</h3>
           <p>Mugs, T-shirts, pens, keychains, gift items and more — all branded to perfection.</p>
-          <span class="svc-link">Learn More <i class="fas fa-arrow-right"></i></span>
+          <span class="svc-more">Learn More <i class="fas fa-arrow-right"></i></span>
         </div>
-
-        <div class="svc-card svc-card--highlight" onclick="openModal('corporate')">
-          <div class="svc-icon"><img src="https://cdn-icons-png.flaticon.com/512/3774/3774278.png" alt="Corporate" /></div>
+        <div class="svc-card svc-card--glow" onclick="openModal('corporate')">
+          <div class="svc-icon"><img src="https://cdn-icons-png.flaticon.com/512/3774/3774278.png" alt="Corporate"/></div>
           <h3>Corporate Branding</h3>
-          <p>Complete branding solutions — from branded stationery to full corporate merchandise.</p>
-          <span class="svc-link">Learn More <i class="fas fa-arrow-right"></i></span>
+          <p>Complete branding solutions — from stationery to full corporate merchandise.</p>
+          <span class="svc-more">Learn More <i class="fas fa-arrow-right"></i></span>
         </div>
-
         <div class="svc-card" onclick="openModal('uv')">
-          <div class="svc-icon"><img src="https://cdn-icons-png.flaticon.com/512/2991/2991100.png" alt="UV Print" /></div>
+          <div class="svc-icon"><img src="https://cdn-icons-png.flaticon.com/512/2991/2991100.png" alt="UV Print"/></div>
           <h3>UV Direct Printing</h3>
-          <p>High-resolution UV &amp; UV-DTF printing on bottles, phone cases, diaries and any surface.</p>
-          <span class="svc-link">Learn More <i class="fas fa-arrow-right"></i></span>
+          <p>High-resolution UV &amp; UV-DTF printing on bottles, cases, diaries and any surface.</p>
+          <span class="svc-more">Learn More <i class="fas fa-arrow-right"></i></span>
         </div>
-
         <div class="svc-card" onclick="openModal('largeformat')">
-          <div class="svc-icon"><img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Large Format" /></div>
+          <div class="svc-icon"><img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Large Format"/></div>
           <h3>Large Format Printing</h3>
-          <p>Eye-catching banners, roll-ups, signage and backdrops for events and spaces.</p>
-          <span class="svc-link">Learn More <i class="fas fa-arrow-right"></i></span>
+          <p>Eye-catching banners, roll-ups, signage and backdrops for any scale.</p>
+          <span class="svc-more">Learn More <i class="fas fa-arrow-right"></i></span>
         </div>
-
-        <div class="svc-card svc-card--highlight" onclick="openModal('events')">
-          <div class="svc-icon"><img src="https://cdn-icons-png.flaticon.com/512/2838/2838779.png" alt="Events" /></div>
+        <div class="svc-card svc-card--glow" onclick="openModal('events')">
+          <div class="svc-icon"><img src="https://cdn-icons-png.flaticon.com/512/2838/2838779.png" alt="Events"/></div>
           <h3>Event Branding</h3>
-          <p>Custom merchandise, branded giveaways and full event identity packages.</p>
-          <span class="svc-link">Learn More <i class="fas fa-arrow-right"></i></span>
+          <p>Custom merchandise, giveaways and full event identity packages.</p>
+          <span class="svc-more">Learn More <i class="fas fa-arrow-right"></i></span>
         </div>
-
         <div class="svc-card" onclick="openModal('packaging')">
-          <div class="svc-icon"><img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="Packaging" /></div>
+          <div class="svc-icon"><img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="Packaging"/></div>
           <h3>Packaging &amp; Promotional</h3>
           <p>Custom packaging, branded bags and promotional products that impress.</p>
-          <span class="svc-link">Learn More <i class="fas fa-arrow-right"></i></span>
+          <span class="svc-more">Learn More <i class="fas fa-arrow-right"></i></span>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ========== SERVICE MODALS ========== -->
+  <!-- Modal -->
   <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
     <div class="modal-box" onclick="event.stopPropagation()">
       <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
       <div class="modal-icon" id="modalIcon"></div>
-      <h3 class="modal-title" id="modalTitle"></h3>
-      <p class="modal-desc" id="modalDesc"></p>
-      <ul class="modal-list" id="modalList"></ul>
-      <a href="#contact" class="btn-primary modal-cta" onclick="closeModal()">Get a Quote <i class="fas fa-arrow-right"></i></a>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <ul id="modalList"></ul>
+      <a href="#contact" class="btn-cta modal-cta" onclick="closeModal()">Get a Quote <i class="fas fa-arrow-right"></i></a>
     </div>
   </div>
 
   <!-- ========== GALLERY ========== -->
   <section class="gallery" id="gallery">
     <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow"><span class="eyebrow-line"></span> Our Portfolio</p>
-        <h2 class="section-heading">Work We're Proud Of</h2>
-        <p class="section-sub">A glimpse into the products and print work we've delivered for our clients.</p>
+      <div class="sec-header">
+        <p class="sec-eyebrow center"><span class="ey-line-short"></span> Our Portfolio</p>
+        <h2 class="sec-h2 center">Work We're Proud Of</h2>
+        <p class="sec-sub">A glimpse into the products and print work we've delivered for our clients.</p>
       </div>
-      <div class="gallery-filters">
-        <button class="filter-btn active" data-filter="all">All Work</button>
-        <button class="filter-btn" data-filter="souvenirs">Souvenirs</button>
-        <button class="filter-btn" data-filter="print">Print &amp; Cards</button>
-        <button class="filter-btn" data-filter="branding">Branding</button>
+      <div class="gal-filters">
+        <button class="fil-btn active" data-filter="all">All Work</button>
+        <button class="fil-btn" data-filter="souvenirs">Souvenirs</button>
+        <button class="fil-btn" data-filter="print">Print &amp; Cards</button>
+        <button class="fil-btn" data-filter="branding">Branding</button>
       </div>
-      <div class="gallery-grid" id="galleryGrid">
-        <div class="gal-item" data-category="souvenirs"><img src="assets/images/gallery-1.jpg" alt="Branded pens" loading="lazy" /><div class="gal-overlay"><span>Custom Branded Pens</span></div></div>
-        <div class="gal-item" data-category="print"><img src="assets/images/gallery-2.jpg" alt="Acrylic invitations" loading="lazy" /><div class="gal-overlay"><span>Acrylic Wedding Invitations</span></div></div>
-        <div class="gal-item" data-category="branding"><img src="assets/images/gallery-3.jpg" alt="Roll-up banner" loading="lazy" /><div class="gal-overlay"><span>Roll-Up Banner Printing</span></div></div>
-        <div class="gal-item" data-category="print"><img src="assets/images/gallery-4.jpg" alt="Printed cards" loading="lazy" /><div class="gal-overlay"><span>Premium Printed Cards</span></div></div>
-        <div class="gal-item" data-category="souvenirs"><img src="assets/images/gallery-5.jpg" alt="Bottles" loading="lazy" /><div class="gal-overlay"><span>Custom Bottles &amp; Accessories</span></div></div>
-        <div class="gal-item" data-category="branding"><img src="assets/images/gallery-6.jpg" alt="GCB cups" loading="lazy" /><div class="gal-overlay"><span>Corporate Branded Cups</span></div></div>
-        <div class="gal-item" data-category="branding"><img src="assets/images/gallery-7.jpg" alt="KokoPadi cups" loading="lazy" /><div class="gal-overlay"><span>Custom Branded Cups</span></div></div>
-        <div class="gal-item" data-category="souvenirs"><img src="assets/images/gallery-8.jpg" alt="Tote bag" loading="lazy" /><div class="gal-overlay"><span>Branded Tote Bags</span></div></div>
-        <div class="gal-item" data-category="print"><img src="assets/images/gallery-9.jpg" alt="Funeral cards" loading="lazy" /><div class="gal-overlay"><span>Acrylic Memorial Cards</span></div></div>
-        <div class="gal-item" data-category="souvenirs"><img src="assets/images/gallery-10.jpg" alt="Flask bottle" loading="lazy" /><div class="gal-overlay"><span>Custom Flask Bottles</span></div></div>
-        <div class="gal-item" data-category="branding"><img src="assets/images/gallery-11.jpg" alt="UV print" loading="lazy" /><div class="gal-overlay"><span>UV/DTF Print Services</span></div></div>
-        <div class="gal-item" data-category="souvenirs"><img src="assets/images/gallery-12.jpg" alt="Gift set" loading="lazy" /><div class="gal-overlay"><span>Corporate Gift Sets</span></div></div>
-        <div class="gal-item" data-category="souvenirs"><img src="assets/images/gallery-13.jpg" alt="Bamboo flasks" loading="lazy" /><div class="gal-overlay"><span>Branded Bamboo Flasks</span></div></div>
+      <div class="gal-grid" id="galGrid">
+        <div class="gal-item" data-cat="souvenirs"><img src="assets/images/gallery-1.jpg" alt="Branded pens" loading="lazy"/><div class="gal-ov"><span>Custom Branded Pens</span></div></div>
+        <div class="gal-item" data-cat="print"><img src="assets/images/gallery-2.jpg" alt="Acrylic invitations" loading="lazy"/><div class="gal-ov"><span>Acrylic Wedding Invitations</span></div></div>
+        <div class="gal-item" data-cat="branding"><img src="assets/images/gallery-3.jpg" alt="Roll-up banner" loading="lazy"/><div class="gal-ov"><span>Roll-Up Banner Printing</span></div></div>
+        <div class="gal-item" data-cat="print"><img src="assets/images/gallery-4.jpg" alt="Printed cards" loading="lazy"/><div class="gal-ov"><span>Premium Printed Cards</span></div></div>
+        <div class="gal-item" data-cat="souvenirs"><img src="assets/images/gallery-5.jpg" alt="Bottles" loading="lazy"/><div class="gal-ov"><span>Custom Bottles &amp; Accessories</span></div></div>
+        <div class="gal-item" data-cat="branding"><img src="assets/images/gallery-6.jpg" alt="GCB cups" loading="lazy"/><div class="gal-ov"><span>Corporate Branded Cups</span></div></div>
+        <div class="gal-item" data-cat="branding"><img src="assets/images/gallery-7.jpg" alt="KokoPadi cups" loading="lazy"/><div class="gal-ov"><span>Custom Branded Cups</span></div></div>
+        <div class="gal-item" data-cat="souvenirs"><img src="assets/images/gallery-8.jpg" alt="Tote bag" loading="lazy"/><div class="gal-ov"><span>Branded Tote Bags</span></div></div>
+        <div class="gal-item" data-cat="print"><img src="assets/images/gallery-9.jpg" alt="Funeral cards" loading="lazy"/><div class="gal-ov"><span>Acrylic Memorial Cards</span></div></div>
+        <div class="gal-item" data-cat="souvenirs"><img src="assets/images/gallery-10.jpg" alt="Flask bottle" loading="lazy"/><div class="gal-ov"><span>Custom Flask Bottles</span></div></div>
+        <div class="gal-item" data-cat="branding"><img src="assets/images/gallery-11.jpg" alt="UV print" loading="lazy"/><div class="gal-ov"><span>UV/DTF Print Services</span></div></div>
+        <div class="gal-item" data-cat="souvenirs"><img src="assets/images/gallery-12.jpg" alt="Gift set" loading="lazy"/><div class="gal-ov"><span>Corporate Gift Sets</span></div></div>
+        <div class="gal-item" data-cat="souvenirs"><img src="assets/images/gallery-13.jpg" alt="Bamboo flasks" loading="lazy"/><div class="gal-ov"><span>Branded Bamboo Flasks</span></div></div>
       </div>
     </div>
   </section>
@@ -316,31 +326,31 @@
   <!-- ========== TESTIMONIALS ========== -->
   <section class="testimonials" id="testimonials">
     <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow"><span class="eyebrow-line"></span> Client Love</p>
-        <h2 class="section-heading">What Our Clients Say</h2>
-        <p class="section-sub">Real words from real people who trusted us with their brand.</p>
+      <div class="sec-header">
+        <p class="sec-eyebrow center"><span class="ey-line-short"></span> Client Love</p>
+        <h2 class="sec-h2 center">What Our Clients Say</h2>
+        <p class="sec-sub">Real words from real people who trusted us with their brand.</p>
       </div>
       <div class="testi-grid">
         <div class="testi-card">
           <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           <p>"Beejet delivered our corporate branded items on time and the quality was exceptional. The team was professional throughout. Highly recommend!"</p>
-          <div class="testi-author"><div class="testi-av">CO</div><div><strong>Cynthia Ofori-Dwumfuo</strong><span>Marketing Manager, GCB Bank</span></div></div>
+          <div class="testi-author"><div class="tav">CO</div><div><strong>Cynthia Ofori-Dwumfuo</strong><span>Marketing Manager, GCB Bank</span></div></div>
         </div>
-        <div class="testi-card testi-card--pink">
+        <div class="testi-card testi-card--glow">
           <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           <p>"The acrylic wedding invitations were absolutely stunning! Everyone at the event was asking where we got them. Beejet exceeded all our expectations."</p>
-          <div class="testi-author"><div class="testi-av">EP</div><div><strong>Efua &amp; Prince</strong><span>Wedding Clients</span></div></div>
+          <div class="testi-author"><div class="tav">EP</div><div><strong>Efua &amp; Prince</strong><span>Wedding Clients</span></div></div>
         </div>
         <div class="testi-card">
           <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           <p>"We ordered roll-up banners and branded bags for our NGO event. The prints were crisp, colourful and durable. Beejet is our go-to print partner!"</p>
-          <div class="testi-author"><div class="testi-av">KO</div><div><strong>Kwesi Owusu</strong><span>Events Coordinator, SARIS Ghana</span></div></div>
+          <div class="testi-author"><div class="tav">KO</div><div><strong>Kwesi Owusu</strong><span>Events Coordinator, SARIS Ghana</span></div></div>
         </div>
-        <div class="testi-card testi-card--pink">
+        <div class="testi-card testi-card--glow">
           <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           <p>"From order to delivery, the process was smooth. The branded flasks for our conference were a hit. Great quality, great service, great team!"</p>
-          <div class="testi-author"><div class="testi-av">AB</div><div><strong>Abena Boateng</strong><span>HR Director, Energy Commission Ghana</span></div></div>
+          <div class="testi-author"><div class="tav">AB</div><div><strong>Abena Boateng</strong><span>HR Director, Energy Commission Ghana</span></div></div>
         </div>
       </div>
     </div>
@@ -349,26 +359,26 @@
   <!-- ========== CONTACT ========== -->
   <section class="contact" id="contact">
     <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow"><span class="eyebrow-line"></span> Get In Touch</p>
-        <h2 class="section-heading">Let's Work Together</h2>
-        <p class="section-sub">Ready to elevate your brand? Reach out and let's create something amazing.</p>
+      <div class="sec-header">
+        <p class="sec-eyebrow center"><span class="ey-line-short"></span> Get In Touch</p>
+        <h2 class="sec-h2 center">Let's Work Together</h2>
+        <p class="sec-sub">Ready to elevate your brand? Reach out and let's create something amazing.</p>
       </div>
       <div class="contact-grid">
-        <div class="contact-info">
-          <a href="https://maps.google.com/?q=13+Mensah+Street+Accra+New+Town+Ghana" target="_blank" class="cinfo-card cinfo-card--link">
-            <div class="cinfo-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div><h4>Our Location</h4><p>13 Mensah Street, Accra New Town, Ghana <i class="fas fa-external-link-alt" style="font-size:0.7rem"></i></p></div>
+        <div class="contact-left">
+          <a href="https://maps.google.com/?q=13+Mensah+Street+Accra+New+Town+Ghana" target="_blank" class="ccard ccard--link">
+            <div class="ccard-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div><h4>Our Location</h4><p>13 Mensah Street, Accra New Town, Ghana <i class="fas fa-external-link-alt" style="font-size:.65rem"></i></p></div>
           </a>
-          <div class="cinfo-card">
-            <div class="cinfo-icon"><i class="fas fa-phone"></i></div>
+          <div class="ccard">
+            <div class="ccard-icon"><i class="fas fa-phone"></i></div>
             <div><h4>Call Us</h4><p><a href="tel:+233557079120">0557 079 120</a></p><p><a href="tel:+233244864905">0244 864 905</a></p></div>
           </div>
-          <div class="cinfo-card">
-            <div class="cinfo-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="ccard">
+            <div class="ccard-icon"><i class="fab fa-whatsapp"></i></div>
             <div><h4>WhatsApp</h4><p><a href="https://wa.me/233557079120" target="_blank">Chat with us on WhatsApp</a></p></div>
           </div>
-          <div class="cinfo-socials">
+          <div class="ccard-socials">
             <h4>Follow Us</h4>
             <div class="social-row">
               <a href="https://www.instagram.com/beejet_events" target="_blank" class="s-btn s-ig"><i class="fab fa-instagram"></i></a>
@@ -378,14 +388,14 @@
             </div>
           </div>
         </div>
-        <div class="contact-form-wrap">
+        <div class="contact-right">
           <form id="contactForm">
             <div class="form-row">
-              <div class="form-group"><label>Full Name</label><input type="text" id="name" placeholder="Your full name" required /></div>
-              <div class="form-group"><label>Phone Number</label><input type="tel" id="phone" placeholder="Your phone number" /></div>
+              <div class="fg"><label>Full Name</label><input type="text" id="name" placeholder="Your full name" required /></div>
+              <div class="fg"><label>Phone Number</label><input type="tel" id="phone" placeholder="Your phone number" /></div>
             </div>
-            <div class="form-group"><label>Email Address</label><input type="email" id="email" placeholder="your@email.com" /></div>
-            <div class="form-group">
+            <div class="fg"><label>Email Address</label><input type="email" id="email" placeholder="your@email.com" /></div>
+            <div class="fg">
               <label>Service Needed</label>
               <select id="service">
                 <option value="">Select a service...</option>
@@ -398,9 +408,9 @@
                 <option>Other</option>
               </select>
             </div>
-            <div class="form-group"><label>Your Message</label><textarea id="message" rows="5" placeholder="Tell us about your project..."></textarea></div>
-            <button type="submit" class="btn-primary btn-full"><i class="fas fa-paper-plane"></i> Send Message</button>
-            <p class="form-note">Or reach us instantly via <a href="https://wa.me/233557079120" target="_blank">WhatsApp</a></p>
+            <div class="fg"><label>Your Message</label><textarea id="message" rows="5" placeholder="Tell us about your project..."></textarea></div>
+            <button type="submit" class="btn-cta btn-full"><i class="fas fa-paper-plane"></i> Send Message</button>
+            <p class="form-note">Or reach us via <a href="https://wa.me/233557079120" target="_blank">WhatsApp</a></p>
           </form>
         </div>
       </div>
@@ -444,24 +454,21 @@
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
-          <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q=13+Mensah+Street+Accra+New+Town+Ghana" target="_blank">13 Mensah Street, Accra New Town</a></p>
-          <p><i class="fas fa-phone"></i> <a href="tel:+233557079120">0557 079 120</a></p>
-          <p><i class="fas fa-phone"></i> <a href="tel:+233244864905">0244 864 905</a></p>
-          <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/233557079120" target="_blank">WhatsApp Us</a></p>
+          <p class="fc-p"><i class="fas fa-map-marker-alt"></i><a href="https://maps.google.com/?q=13+Mensah+Street+Accra+New+Town+Ghana" target="_blank">13 Mensah Street, Accra New Town</a></p>
+          <p class="fc-p"><i class="fas fa-phone"></i><a href="tel:+233557079120">0557 079 120</a></p>
+          <p class="fc-p"><i class="fas fa-phone"></i><a href="tel:+233244864905">0244 864 905</a></p>
+          <p class="fc-p"><i class="fab fa-whatsapp"></i><a href="https://wa.me/233557079120" target="_blank">WhatsApp Us</a></p>
         </div>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2025 Beejet Souvenirs &amp; Printing. All rights reserved.</p>
         <p>We print identity with precision.</p>
       </div>
-      <div class="footer-credit">Built by <a href="https://portfoliocasep.vercel.app/" target="_blank" rel="noopener noreferrer">CASEP GROUP</a></div>
+      <div class="footer-credit">Built by <a href="https://portfoliocasep.vercel.app/" target="_blank">CASEP GROUP</a></div>
     </div>
   </footer>
 
-  <!-- WhatsApp Float -->
   <a href="https://wa.me/233557079120" target="_blank" class="wa-float"><i class="fab fa-whatsapp"></i></a>
-
-  <!-- Back to top -->
   <button class="back-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
 
   <script src="script.js"></script>
